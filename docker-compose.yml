@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  test:
+    image: python
+    command: /test/test.sh
+    volumes:
+      - .:/test
+    working_dir: /test
